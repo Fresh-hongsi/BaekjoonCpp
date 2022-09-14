@@ -1,0 +1,43 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main(void)
+{
+	string doctor;
+	string me;
+	int countD = 0;
+	int countM = 0;
+	
+	cin >> me;
+	cin >> doctor;
+	
+
+	for (int i = 0; i < me.length(); i++)
+	{
+		if (me[i] == 'a')
+		{
+			countM++;
+		}
+	}
+
+	for (int i = 0; i < doctor.length(); i++)
+	{
+		if (doctor[i] == 'a')
+		{
+			countD++;
+		}
+	}
+
+	if (countM < countD)
+	{
+		cout << "no";
+	}
+
+	else
+	{
+		cout << "go";
+	}
+
+	return 0;
+}
